@@ -15,7 +15,7 @@
 @font-face { font-family: "Inter"; font-weight: 400; font-display: swap; src: url("../assets/fonts/inter-400.woff2") format("woff2"); }
 @font-face { font-family: "Inter"; font-weight: 600; font-display: swap; src: url("../assets/fonts/inter-600.woff2") format("woff2"); }
 
-/* ---------- Design tokens ---------- */
+/* Design tokens */
 :root {
   --c-primary: #ff5a3c;
   --c-primary-dark: #e9472a;
@@ -50,7 +50,7 @@
   --shadow-icon: 0 16px 45px -12px rgba(0, 0, 0, 0.1);
 }
 
-/* ---------- Base ---------- */
+/* Base */
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 body {
@@ -90,7 +90,7 @@ button { cursor: pointer; }
   margin-inline: auto;
 }
 
-/* ---------- Shared components ---------- */
+/* Shared components */
 /* Image placeholders: the Figma file only contains grey boxes for photos. */
 .placeholder { background-color: var(--c-placeholder); }
 
@@ -363,9 +363,7 @@ button { cursor: pointer; }
 }
 .hero__how:hover .hero__play { transform: scale(1.08); }
 
-/* ==========================================================================
-   Commercial real estate
-   ========================================================================== */
+/* Commercial real estate */
 .commercial__title { max-width: 567px; margin-inline: auto; }
 .commercial__text {
   max-width: 425px;
@@ -419,9 +417,7 @@ button { cursor: pointer; }
 }
 .guide-card--active .guide-card__text { color: rgba(255, 255, 255, .8); }
 
-/* ==========================================================================
-   Dream living spaces
-   ========================================================================== */
+/* Dream living spaces */
 .dream__inner {
   display: grid;
   grid-template-columns: minmax(0, 628px) minmax(0, 1fr);
@@ -473,9 +469,7 @@ button { cursor: pointer; }
   color: var(--c-muted);
 }
 
-/* ==========================================================================
-   About home
-   ========================================================================== */
+/*  About home */
 .about__inner {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 547px);
@@ -518,9 +512,7 @@ button { cursor: pointer; }
 }
 .about__img--tall { grid-row: 1 / 3; }
 
-/* ==========================================================================
-   Services
-   ========================================================================== */
+/* Services */
 .services {
   margin-top: var(--space-section);
   padding: 91px 0;
@@ -601,9 +593,7 @@ button { cursor: pointer; }
 .link-more:hover { color: var(--c-primary); }
 .link-more:hover img { transform: translateX(4px); }
 
-/* ==========================================================================
-   Featured property
-   ========================================================================== */
+/* Featured property */
 .properties__head {
   display: flex;
   align-items: flex-end;
@@ -685,9 +675,7 @@ button { cursor: pointer; }
 .property-card__link:hover { background: var(--c-primary); }
 .properties .section-action { margin-top: 59px; }
 
-/* ==========================================================================
-   Unit banner
-   ========================================================================== */
+/* Unit banner */
 .unit {
   position: relative;
   margin-top: var(--space-section);
@@ -774,9 +762,7 @@ button { cursor: pointer; }
 .unit__badge span { font-size: 18px; font-weight: 500; text-transform: uppercase; }
 .unit__badge strong { font-size: 32px; font-weight: 600; }
 
-/* ==========================================================================
-   Testimonial
-   ========================================================================== */
+/* Testimonial */
 .testimonial__title { font-size: 45px; line-height: 54px; letter-spacing: 0; text-transform: none; }
 .testimonial__intro {
   max-width: 450px;
@@ -843,9 +829,7 @@ button { cursor: pointer; }
   color: rgba(109, 119, 129, .6);
 }
 
-/* ==========================================================================
-   Projects CTA
-   ========================================================================== */
+/* Projects CTA */
 .projects { padding-top: 184px; }
 .projects__title { max-width: 544px; margin-inline: auto; text-align: center; text-transform: none; }
 .city-list {
@@ -933,9 +917,7 @@ button { cursor: pointer; }
 }
 .subscribe__btn:hover { background: var(--c-primary-dark); }
 
-/* ==========================================================================
-   Blog
-   ========================================================================== */
+/* Blog */
 .blog { padding-top: 145px; }
 .blog__title { font-size: 50px; font-weight: 700; line-height: 1.364; color: var(--c-ink); }
 .blog__text { max-width: 402px; margin: 11px auto 0; color: var(--c-grey); }
@@ -973,9 +955,7 @@ button { cursor: pointer; }
 .blog-card__meta .blog-card__author { color: var(--c-primary); }
 .blog .section-action { margin-top: 65px; }
 
-/* ==========================================================================
-   Contact
-   ========================================================================== */
+/* Contact */
 .contact__eyebrow {
   font-size: 24px;
   font-weight: 600;
@@ -1068,9 +1048,7 @@ button { cursor: pointer; }
 }
 .contact-form__submit:hover { background: var(--c-primary-dark); }
 
-/* ==========================================================================
-   Footer
-   ========================================================================== */
+/* Footer */
 .site-footer {
   margin-top: 132px;
   padding: 65px 0 50px;
@@ -1166,10 +1144,10 @@ button { cursor: pointer; }
 .footer__contact-link:hover { color: var(--c-white); }
 .footer__copy { font-size: 12px; line-height: 20px; opacity: .6; }
 
-/* ==========================================================================
+/* 
    Responsive
    Only a 1920px desktop frame exists in Figma; smaller layouts are inferred.
-   ========================================================================== */
+ */
 
 /* ≤1599: scale the hero heading with the narrower text column */
 @media (max-width: 1599px) {
